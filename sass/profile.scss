@@ -1,0 +1,91 @@
+.profile {
+    display: flex;
+    //  max-width: 45%;
+    width: 30%; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-left: 30px solid blueviolet;
+    background-color: lightgrey;
+
+    .avatar {
+        border: 5px solid rgb(86, 82, 82);
+        border-radius: 50%;
+        background-color: white;
+        // width: 10px;
+        z-index: 1;
+
+
+        img {
+            border-radius: 50%;
+            width: 180px;
+            margin: 2px;
+            // transition: 1s ease-in-out;
+            
+            &:hover {
+                width: 200px;
+                border-color: blueviolet;
+                transition: 1s ease-in-out;
+            }
+        }
+    }
+
+    .name {
+        // position: absolute;
+        h1 {
+            margin: 0 auto;
+            padding-bottom: 5px;
+            text-align: center;
+            border-bottom: 1px dashed grey;
+            // position: absolute;
+
+
+            &:hover {
+                color: blueviolet;
+            }
+        }
+
+        h5 {
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 5px;
+            // position: absolute;
+
+
+            &:hover {
+            color: blueviolet;
+            }
+        }
+    }   
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            list-style: none;
+            position: absolute;     
+            margin: 0 auto;
+
+            li[class='mail'] {
+                position: absolute;
+                top: 30px;
+                right: -22px;
+                display: none;
+            }
+
+            li[class='mobile'] {
+                position: absolute;
+                top: 30px;
+                right: 45px;
+                display: none;
+            }
+        }
+        
+        .icon-mail2:hover li, .icon-mobile:hover li {
+            display: block;
+        }
+    }
+
+}

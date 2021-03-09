@@ -1,0 +1,166 @@
+* {
+  color: #565252;
+  font-family: Tahoma, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f5dbb9;
+}
+
+body {
+  /* background-color: burlywood; */
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span[class^=icon] {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+span[class^=icon]:hover {
+  color: lightsalmon;
+}
+
+.profile {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-left: 30px solid blueviolet;
+  background-color: lightgrey;
+}
+.profile .avatar {
+  border: 5px solid #565252;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+}
+.profile .avatar img {
+  border-radius: 50%;
+  width: 180px;
+  margin: 2px;
+}
+.profile .avatar img:hover {
+  width: 200px;
+  border-color: blueviolet;
+  transition: 1s ease-in-out;
+}
+.profile .name h1 {
+  margin: 0 auto;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px dashed grey;
+}
+.profile .name h1:hover {
+  color: blueviolet;
+}
+.profile .name h5 {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.profile .name h5:hover {
+  color: blueviolet;
+}
+.profile .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.profile .icons ul {
+  list-style: none;
+  position: absolute;
+  margin: 0 auto;
+}
+.profile .icons ul li[class=mail] {
+  position: absolute;
+  top: 30px;
+  right: -22px;
+  display: none;
+}
+.profile .icons ul li[class=mobile] {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  display: none;
+}
+.profile .icons .icon-mail2:hover li, .profile .icons .icon-mobile:hover li {
+  display: block;
+}
+
+.skills {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  border-right: 5px solid blueviolet;
+}
+.skills .icon-hammer {
+  display: flex;
+  display: flex;
+  width: 10px;
+  align-items: center;
+  font-size: 30px;
+}
+.skills h1 {
+  margin: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+  text-align: left;
+  font-size: unset;
+}
+.skills h1:hover {
+  color: blueviolet;
+}
+.skills h2:hover {
+  color: blueviolet;
+}
+.skills .skill {
+  padding: 3px;
+}
+.skills .skill .progress {
+  background-color: #eee;
+  height: 15px;
+  width: 100%;
+}
+.skills .skill .progress .percentage {
+  height: 100%;
+  background-color: blueviolet;
+  animation: load 2s 2 alternate-reverse;
+}
+.skills .personal_skills .skill .progress .percentage {
+  background-color: lightsalmon;
+  animation-delay: 2s;
+}
+@keyframes load {
+  from {
+    width: 0;
+  }
+  to {
+    width: width;
+  }
+}
+
+/*# sourceMappingURL=CV_style.css.map */

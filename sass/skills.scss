@@ -1,0 +1,85 @@
+.skills {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid black;
+    border-right: 5px solid blueviolet;
+
+    .icon-hammer {     
+        display: flex;   
+        display: flex;
+        width: 10px;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    h1 {
+        margin: 5px;
+        margin-left: 5px;
+        font-weight: bold;
+        text-align: left;
+        font-size: unset;;
+
+        &:hover {
+        color: blueviolet;
+        }
+    }
+
+    h2 {
+        &:hover {
+            color: blueviolet;
+        }
+    }
+    
+    .skill {
+        padding: 3px;
+
+        .progress  {
+            // animation: load 2s;
+            background-color: #eee;
+            height: 15px;
+            width: 100%;
+
+            .percentage {
+                height: 100%;
+                background-color: blueviolet;
+                animation: load 2s 2 alternate-reverse;
+                // animation: load 2s;
+            
+                
+            }
+        }    
+    }
+
+    .personal_skills {
+        .skill {
+            .progress {
+                .percentage {
+                    background-color: lightsalmon;
+                    animation-delay: 2s;
+                }
+            }
+        }
+    }
+
+    // @keyframes load {
+    //     0% { width: 0;  }
+    //     30% {width: 50%;}
+    //     100% {width: width}
+    // }
+
+    
+    @keyframes load {
+        from { width: 0;  }
+        // 30% {width: 50%;}
+        to {width: width}
+    }
+
+}
+
+
+
+
